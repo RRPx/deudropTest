@@ -1,0 +1,16 @@
+create database Donations;
+use Projects;
+
+create table Projects ( 
+	ID INT(10) AUTO_INCREMENT, 
+	PROJECT_NAME char(30), 
+	TARGET_AMOUNT INT(20),
+	COLLECTED_AMOUNT INT(20)
+	PRIMARY KEY(id) 
+);
+
+insert into Projects values ( '', 'NEWMARKET-01', '10000', '500' );
+insert into Projects values ( '', 'RANGPUR-02', '25000', '1000' );
+insert into Projects values ( '', 'COMILLA-05', '17000', '1500' );
+
+select * from PROJECTS;
